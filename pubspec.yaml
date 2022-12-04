@@ -1,5 +1,5 @@
 name: lens_spinner
-description: A new Flutter package project.
+description: Flutter widget to display a spinner similar to the spinner from the LENS application.
 version: 0.0.1
 homepage: https://github.com/grfc-ru/lens-spinner
 repository: https://github.com/grfc-ru/lens-spinner/tree/main
