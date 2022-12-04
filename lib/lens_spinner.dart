@@ -56,6 +56,7 @@ class LensSpinner extends StatefulWidget {
   State<LensSpinner> createState() => _LensSpinnerState();
 }
 
+/// State for LensSpinner class
 class _LensSpinnerState extends State<LensSpinner> {
   double _width = 0.0;
   bool state = true;

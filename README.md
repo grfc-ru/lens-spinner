@@ -7,7 +7,6 @@ Flutter widget to display a spinner similar to the spinner from the LENS applica
 
 ```dart
 import 'package:flutter/material.dart';
-
 import 'package:lens_spinner/lens_spinner.dart';
 
 void main() {
@@ -22,8 +21,10 @@ class MainApp extends StatelessWidget {
     return const MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.black,
-        body: LensSpinner(
-          width: 400,
+        body: Center(
+          child: LensSpinner(
+            width: 400,
+          ),
         ),
       ),
     );

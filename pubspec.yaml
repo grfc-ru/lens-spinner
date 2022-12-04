@@ -6,7 +6,7 @@ repository: https://github.com/grfc-ru/lens-spinner/tree/main
 issue_tracker: https://github.com/grfc-ru/lens-spinner/issues
 
 environment:
-  sdk: ">=2.19.0-429.0.dev <3.0.0"
+  sdk: ">=2.17.0 <3.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
