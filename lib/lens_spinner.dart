@@ -8,50 +8,49 @@ import 'package:flutter/material.dart';
 ///
 /// {@category Spinner}
 class LensSpinner extends StatefulWidget {
-  final double width;
-  final int delay;
-  final int duration;
-  final double backLineHeight;
-  final Color backLineColor;
-  final double mainLineHeight;
-  final Color mainLineColor;
-  final double blurRadius;
-  final double spreadRadius;
-  final Color shadowColor;
-
   const LensSpinner({
     Key? key,
-
-    /// Width widget
     required this.width,
-
-    /// Repeat delay in seconds
     this.delay = 1,
-
-    /// Animation duration in milliseconds
-    this.duration = 1000,
-
-    /// Back line height
     this.backLineHeight = 1,
-
-    /// Back line color
     this.backLineColor = const Color(0xFF212121),
-
-    /// Main line height
     this.mainLineHeight = 1,
-
-    /// Main line color
     this.mainLineColor = Colors.blue,
-
-    /// Blur radius
+    this.duration = 1000,
     this.blurRadius = 50.0,
-
-    /// Spread radius
     this.spreadRadius = 1.0,
-
-    /// Shadow color
     this.shadowColor = Colors.white,
   }) : super(key: key);
+
+  /// Width widget
+  final double width;
+
+  /// Repeat delay in seconds
+  final int delay;
+
+  /// Animation duration in milliseconds
+  final int duration;
+
+  /// Back line height
+  final double backLineHeight;
+
+  /// Back line color
+  final Color backLineColor;
+
+  /// Main line height
+  final double mainLineHeight;
+
+  /// Main line color
+  final Color mainLineColor;
+
+  /// Blur radius
+  final double blurRadius;
+
+  /// Spread radius
+  final double spreadRadius;
+
+  /// Shadow color
+  final Color shadowColor;
 
   @override
   State<LensSpinner> createState() => _LensSpinnerState();
