@@ -8,47 +8,48 @@ import 'package:flutter/material.dart';
 ///
 /// {@category Spinner}
 class LensSpinner extends StatefulWidget {
-  /// Width widget
   final double width;
-
-  /// Repeat delay in seconds
   final int delay;
-
-  /// Animation duration in milliseconds
   final int duration;
-
-  /// Back line height
   final double backLineHeight;
-
-  /// Back line color
   final Color backLineColor;
-
-  /// Main line height
   final double mainLineHeight;
-
-  /// Main line color
   final Color mainLineColor;
-
-  /// Blur radius
   final double blurRadius;
-
-  /// Spread radius
   final double spreadRadius;
-
-  /// Shadow color
   final Color shadowColor;
 
   const LensSpinner({
     Key? key,
+
+    /// Width widget
     required this.width,
+
+    /// Repeat delay in seconds
     this.delay = 1,
-    this.backLineHeight = 1,
-    this.backLineColor = const Color(0xFF212121),
-    this.mainLineHeight = 1,
-    this.mainLineColor = Colors.blue,
+
+    /// Animation duration in milliseconds
     this.duration = 1000,
+
+    /// Back line height
+    this.backLineHeight = 1,
+
+    /// Back line color
+    this.backLineColor = const Color(0xFF212121),
+
+    /// Main line height
+    this.mainLineHeight = 1,
+
+    /// Main line color
+    this.mainLineColor = Colors.blue,
+
+    /// Blur radius
     this.blurRadius = 50.0,
-    this.spreadRadius = 10.0,
+
+    /// Spread radius
+    this.spreadRadius = 1.0,
+
+    /// Shadow color
     this.shadowColor = Colors.white,
   }) : super(key: key);
 
@@ -97,17 +98,19 @@ class _LensSpinnerState extends State<LensSpinner> {
                 children: [
                   Container(
                     height: widget.mainLineHeight,
-                    color: widget.mainLineColor,
-                  ),
-                  Container(
-                    width: 0,
-                    height: 0,
                     decoration: BoxDecoration(
-                      shape: BoxShape.circle,
+                      gradient: LinearGradient(
+                        begin: Alignment.centerRight,
+                        end: Alignment.centerLeft,
+                        colors: [
+                          widget.mainLineColor,
+                          widget.mainLineColor,
+                          widget.backLineColor,
+                        ],
+                      ),
                       boxShadow: [
                         BoxShadow(
-                          color:
-                              state ? widget.shadowColor : Colors.transparent,
+                          color: widget.shadowColor,
                           blurRadius: widget.blurRadius,
                           spreadRadius: widget.spreadRadius,
                         ),
