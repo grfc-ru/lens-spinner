@@ -1,6 +1,8 @@
-# LENS Spinner
+# LENS Spinner (linear indeterminate)
 
-Flutter widget to display a spinner similar to the spinner from the LENS application
+Flutter widget to display a linear indeterminate spinner similar to the spinner from the LENS application
+
+Progress indicators commonly known as spinners, express an unspecified wait time or display the length of a process.
 
 ![gif](img/lens_spinner.gif)
 ## Usage
