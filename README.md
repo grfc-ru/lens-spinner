@@ -48,4 +48,4 @@ Please file feature requests and bugs at the [issue tracker][tracker].
   
 ## License  
   
-[WTFPL](https://github.com/grfc-ru/lens-spinner/blob/main/LICENSE)  
+[END-USER LICENSE AGREEMENT](https://github.com/grfc-ru/lens-spinner/blob/main/LICENSE)  
